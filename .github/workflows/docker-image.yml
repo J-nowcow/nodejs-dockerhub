@@ -27,5 +27,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/nodejs-github-action:${{ steps.timestamp.outputs.time }}
+        tags: jnowcow/nodejs-github-action:${{ env.CURRENT_TIME }}
 
